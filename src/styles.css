@@ -2,3 +2,17 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.cardContainer {
+  position: relative;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.control-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  z-index: 10;
+}

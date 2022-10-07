@@ -1,14 +1,17 @@
 const CardBody = ({ children, disabled, py }) => {
-  const backgroundColor = disabled ? "#dddddd" : "white";
+  const backgroundColor = disabled ? "#dddddd" : "transparent";
   const color = disabled ? "gray" : "black";
+  const userSelect = disabled ? "none" : "unset";
 
   return (
     <div
       style={{
+        userSelect,
         backgroundColor,
         color,
         paddingTop: py + "em",
-        paddingBottom: py + "em"
+        paddingBottom: py + "em",
+        textAlign: "justify"
       }}
     >
       {children}
